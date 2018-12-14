@@ -14,7 +14,10 @@
     placeholder="Search Recipes"
   ></ion-searchbar>
   <ion-list>
-    <ion-item *ngFor="let item of (_recipes | async)">
+    <ion-item
+      *ngFor="let item of (_recipes | async)"
+      (click)="onViewRecipe(item)"
+    >
       <ion-avatar slot="start">
         <img src="assets/img/vegetables.jpg" />
       </ion-avatar>

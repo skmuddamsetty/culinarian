@@ -7,6 +7,7 @@ import { Recipe, RecipeId } from '../models/recipe.model';
 import { DataService } from '../services/data.service';
 import { Observable, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,8 @@ export class HomePage implements OnInit {
   recipes: Recipe[];
   constructor(
     private readonly afs: AngularFirestore,
-    public dataService: DataService
+    public dataService: DataService,
+    public router: Router
   ) {}
 
   private recipesCollection: AngularFirestoreCollection<Recipe>;
@@ -45,5 +47,10 @@ export class HomePage implements OnInit {
         this.dataService.setRecipes(this.recipes);
         this._initRecipesSubscription.unsubscribe();
       });
+  }
+
+  onViewRecipe(recipe: RecipeId) {
+    this.dataService.setSelectedRecipe(recipe);
+    this.router.navigate(['/recipe-details']);
   }
 }
