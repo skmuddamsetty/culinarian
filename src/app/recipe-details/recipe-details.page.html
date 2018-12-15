@@ -11,10 +11,33 @@
     </div>
   </ion-label>
 
-  <ion-grid>
+  <ion-grid class="recipe__details">
     <ion-row>
-      <ion-col> ion-col </ion-col>
-      <ion-col> ion-col </ion-col>
+      <ion-col>
+        <div class="recipe__info">
+          <ion-icon name="stopwatch" class="recipe__info-icon"></ion-icon>
+          <span class="recipe__info-data recipe__info-data--minutes">90</span>
+          <span class="recipe__info-text"> minutes</span>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="recipe__info">
+          <ion-icon name="man" class="recipe__info-icon"></ion-icon>
+          <span class="recipe__info-data recipe__info-data--people">1</span>
+          <span class="recipe__info-text"> servings</span>
+
+          <div class="recipe__info-buttons">
+            <ion-icon
+              name="remove-circle"
+              class="btn-tiny btn-decrease"
+            ></ion-icon>
+            <ion-icon
+              name="add-circle"
+              class="btn-tiny btn-increase"
+            ></ion-icon>
+          </div>
+        </div>
+      </ion-col>
     </ion-row>
   </ion-grid>
   <!--
