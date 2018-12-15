@@ -2,7 +2,7 @@
   <ion-toolbar> <ion-title>Recipe</ion-title> </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-label>
     <div text-center>
       <h4 class="recipe__title">
@@ -40,180 +40,199 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <!-- <div class="recipe__ingredients"> -->
+  <ion-grid class="recipe__ingredients">
+    <ion-row>
+      <ion-col>
+        <div class="recipe__item">
+          <ion-icon name="checkmark" class="recipe__icon"></ion-icon>
+          <div class="recipe__count">1/8</div>
+          <div class="recipe__ingredient">
+            <span class="recipe__unit">pound</span> chorizo
+          </div>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="recipe__item">
+          <ion-icon name="checkmark" class="recipe__icon"></ion-icon>
+          <div class="recipe__count">1/8</div>
+          <div class="recipe__ingredient">
+            <span class="recipe__unit">pound</span> chorizo
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <!--
-    <div class="recipe">
-      <div class="recipe__ingredients">
-        <ul class="recipe__ingredient-list">
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/8</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">pound</span> chorizo
-            </div>
-          </li>
+    <ul class="recipe__ingredient-list">
+      <li class="recipe__item">
+        <ion-icon name="checkmark-circle" class="recipe__icon"></ion-icon>
+        <div class="recipe__count">1/8</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">pound</span> chorizo
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">pound</span> boneless skinless chicken
-              thighs
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">pound</span> boneless skinless chicken thighs
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">tbsp</span> butter
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">tbsp</span> butter
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit"></span> small onion, diced
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit"></span> small onion, diced
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">3/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit"></span> cloves of garlic, minced
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">3/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit"></span> cloves of garlic, minced
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">3/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">tsp</span> ancho chile powder
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">3/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">tsp</span> ancho chile powder
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">tsp</span> cumin
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">tsp</span> cumin
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">tsp</span> salt
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">tsp</span> salt
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/2</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">tbsp</span> flour
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/2</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">tbsp</span> flour
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">cup</span> chicken broth
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">cup</span> chicken broth
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/8</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">cup</span> cream
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/8</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">cup</span> cream
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/8</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">cup</span> sour cream
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/8</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">cup</span> sour cream
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit"></span> lime, juiced
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit"></span> lime, juiced
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">3/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">cup</span> cooked long grain white rice
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">3/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">cup</span> cooked long grain white rice
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">1/8</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">cup</span> cilantro leaves, chopped
-            </div>
-          </li>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">1/8</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">cup</span> cilantro leaves, chopped
+        </div>
+      </li>
 
-          <li class="recipe__item">
-            <svg class="recipe__icon">
-              <use href="img/icons.svg#icon-check"></use>
-            </svg>
-            <div class="recipe__count">3/4</div>
-            <div class="recipe__ingredient">
-              <span class="recipe__unit">cup</span> coarsely shredded sharp
-              cheddar cheese
-            </div>
-          </li>
-        </ul>
-
-        <button class="btn-small recipe__btn recipe__btn--add">
-          <svg class="search__icon">
-            <use href="img/icons.svg#icon-shopping-cart"></use>
-          </svg>
-          <span>Add to shopping list</span>
-        </button>
-      </div>
-    </div>
+      <li class="recipe__item">
+        <svg class="recipe__icon">
+          <use href="img/icons.svg#icon-check"></use>
+        </svg>
+        <div class="recipe__count">3/4</div>
+        <div class="recipe__ingredient">
+          <span class="recipe__unit">cup</span> coarsely shredded sharp cheddar
+          cheese
+        </div>
+      </li>
+    </ul>
   -->
+
+  <!--
+    <button class="btn-small recipe__btn recipe__btn--add">
+      <svg class="search__icon">
+        <use href="img/icons.svg#icon-shopping-cart"></use>
+      </svg>
+      <span>Add to shopping list</span>
+    </button>
+  -->
+  <!-- </div> -->
 </ion-content>
