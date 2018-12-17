@@ -12,6 +12,7 @@ export class RecipeDetailsPage implements OnInit, OnDestroy {
   selectedRecipeObservable: Observable<RecipeId>;
   selectedRecipeSubscription: Subscription;
   recipe: RecipeId;
+  servingCount = 1;
   constructor(public dataService: DataService) {}
 
   ngOnInit() {
@@ -19,10 +20,14 @@ export class RecipeDetailsPage implements OnInit, OnDestroy {
     this.selectedRecipeSubscription = this.selectedRecipeObservable.subscribe(
       recipe => {
         this.recipe = recipe;
+        console.log(this.recipe);
       }
     );
   }
 
+  onAdd() {
+    this.servingCount = this.servingCount + 1;
+  }
   ngOnDestroy() {
     if (this.selectedRecipeSubscription) {
       this.selectedRecipeSubscription.unsubscribe();

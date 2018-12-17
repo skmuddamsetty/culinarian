@@ -2,7 +2,7 @@
   <ion-toolbar> <ion-title>Recipe</ion-title> </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="recipe">
   <ion-label>
     <div text-center>
       <h4 class="recipe__title">
@@ -23,41 +23,33 @@
       <ion-col>
         <div class="recipe__info">
           <ion-icon name="man" class="recipe__info-icon"></ion-icon>
-          <span class="recipe__info-data recipe__info-data--people">1</span>
+          <span class="recipe__info-data recipe__info-data--people">{{
+            this.servingCount
+          }}</span>
           <span class="recipe__info-text"> servings</span>
 
           <div class="recipe__info-buttons">
-            <ion-icon
-              name="remove-circle"
-              class="btn-tiny btn-decrease"
-            ></ion-icon>
+            <ion-icon name="remove-circle" class="btn-tiny btn-decrease">
+            </ion-icon>
             <ion-icon
               name="add-circle"
               class="btn-tiny btn-increase"
-            ></ion-icon>
+              (click)="onAdd()"
+            >
+            </ion-icon>
           </div>
         </div>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <!-- <div class="recipe__ingredients"> -->
   <ion-grid class="recipe__ingredients">
     <ion-row>
-      <ion-col>
+      <ion-col size="6" *ngFor="let item of recipe.ingredients">
         <div class="recipe__item">
           <ion-icon name="checkmark" class="recipe__icon"></ion-icon>
-          <div class="recipe__count">1/8</div>
+          <div class="recipe__count">{{ item.count * this.servingCount }}</div>
           <div class="recipe__ingredient">
-            <span class="recipe__unit">pound</span> chorizo
-          </div>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="recipe__item">
-          <ion-icon name="checkmark" class="recipe__icon"></ion-icon>
-          <div class="recipe__count">1/8</div>
-          <div class="recipe__ingredient">
-            <span class="recipe__unit">pound</span> chorizo
+            <span class="recipe__unit">{{ item.name }}</span>
           </div>
         </div>
       </ion-col>

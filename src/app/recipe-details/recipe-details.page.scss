@@ -146,3 +146,9 @@
   margin-right: 0.5rem;
   flex: 0 0 auto;
 }
+
+.recipe:hover .recipe__info-buttons {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
